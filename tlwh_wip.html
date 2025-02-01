@@ -1,0 +1,256 @@
+<!-- TLWH - Work in Progress -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>The Lonely Walk Home</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="img/icon.png">
+
+<!-- bootsrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<!-- animation on scroll -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <link rel="stylesheet" href="w3.css">
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">                <!-- font -->
+  <script src="https://kit.fontawesome.com/be87b47add.js" crossorigin="anonymous"></script>     <!-- icons -->
+
+  <style>
+  /* scrollbar */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  /* progress bar */
+  ::-webkit-scrollbar-track {
+    background: black;
+    border-radius: 10px;
+  }
+
+  /* progress bar not covered by handle */
+  ::-webkit-scrollbar-track-piece {
+    background: black;
+  }
+
+  /* draggable handle */
+  ::-webkit-scrollbar-thumb {
+    background: #FF682B;
+    border-radius: 10px;
+  }
+/*
+  // handle on hover
+  ::-webkit-scrollbar-thumb:hover {
+    background: #FF682B;
+  }
+*/
+  </style>
+</head>
+
+<body>
+
+<!---------------------------------------------------------------------------------------------->
+<!--------------------------------------- Navbar (static) -------------------------------------->
+<!---------------------------------------------------------------------------------------------->
+
+<nav class="navbar navbar-inverse navbar-fixed-top w3-bar color-black bot-border" id="myNavbar">
+  <a href="index.html"><img src="img/ci_logo.png" height="60" alt="Convolution Interactive"></a>
+
+<!-- Navbar links on the right -->
+  <div class="float-right">
+    <a href="index.html" class="w3-bar-item w3-button"><i class="fas fa-home"></i> HOME</a>
+  </div>
+</nav>
+
+<script>
+// Initialize AOS Scroll animations
+AOS.init();
+
+// Animation on scroll
+$(window).scroll(function(){
+    $(".header-video").css("opacity", 1 - $(window).scrollTop() / 600);
+  });
+
+$(window).scroll(function(){
+    $(".header").css("opacity", 1 - $(window).scrollTop() / 800);
+  });
+</script>
+
+<!---------------------------------------------------------------------------------------------->
+<!--------------------------------------- Carousel ----------------------------------------------->
+<!---------------------------------------------------------------------------------------------->
+<div id="top" class="w3-container w3-black" style="padding:128px 16px" align="center" id="home">
+  <br>
+  <h2 class="w3-center">WORK IN PROGRESS</h2>
+  <br>
+  <hr width="20%">
+  <br><br>
+
+<!--------------- Map Design -------------->
+<h3 data-aos="fade-up" data-aos-duration="1000">- ENVIRONMENT -</h3>
+<br>
+  <div id="carousel-map" data-aos="fade-up" data-aos-duration="2000" class="carousel slide" data-interval="false" data-ride="carousel">
+
+ <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-map" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-map" data-slide-to="1"></li>
+      <li data-target="#carousel-map" data-slide-to="2"></li>
+      <li data-target="#carousel-map" data-slide-to="3"></li>
+    </ol>
+
+ <!-- Slides -->
+    <div class="carousel-inner carousel-bg">
+
+      <div class="item active">
+        <video class="wip" autoplay loop muted>
+          <source src="img/wip_exterior.mp4" type="video/mp4">
+          Your browser does not support videos.
+        </video>
+      </div>
+
+      <div class="item">
+       <img class="gif" src="img/wip_torch.gif">
+      </div>
+
+      <div class="item">
+       <img src="img/wip_int.png">
+      </div>
+
+      <div class="item">
+       <img src="img/wip_ext.png">
+      </div>
+
+    </div> <!--carousel-inner -->
+    <br>
+  <!-- Left and right controls -->
+      <a class="left carousel-control" href="#carousel-map" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#carousel-map" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Next</span>
+      </a>
+
+  </div> <!-- carousel-map -->
+
+<br><br><br>
+
+<!--------------- Concept Art -------------->
+<h3 data-aos="fade-up" data-aos-duration="1000">- MODELS -</h3>
+<br>
+ <div id="carousel-art" data-aos="fade-up" data-aos-duration="2000" class="carousel slide" data-interval="false" data-ride="carousel">
+
+ <!-- Indicators -->
+  <ol class="carousel-indicators">
+   <li data-target="#carousel-art" data-slide-to="0" class="active"></li>
+   <li data-target="#carousel-art" data-slide-to="1"></li>
+   <li data-target="#carousel-art" data-slide-to="2"></li>
+   <li data-target="#carousel-art" data-slide-to="3"></li>
+   <li data-target="#carousel-art" data-slide-to="4"></li>
+   <li data-target="#carousel-art" data-slide-to="5"></li>
+   <li data-target="#carousel-art" data-slide-to="6"></li>
+  </ol>
+
+ <!-- Slides -->
+  <div class="carousel-inner carousel-bg carousel-img">
+
+   <div class="item active">
+    <img src="img/wip_cabin.png">
+   </div>
+
+   <div class="item">
+    <img src="img/wip_rocks.png">
+   </div>
+
+   <div class="item">
+    <img src="img/wip_torch.png">
+   </div>
+
+   <div class="item">
+    <img src="img/wip_key.png">
+   </div>
+
+   <div class="item">
+    <img src="img/wip_house.png">
+   </div>
+
+   <div class="item">
+    <img src="img/wip_houses1.png">
+   </div>
+
+   <div class="item">
+    <img src="img/wip_houses2.png">
+   </div>
+
+   </div> <!--carousel-inner -->
+   <br>
+ <!-- Left and right controls -->
+  <a class="left carousel-control" href="#carousel-art" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-art" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+
+ </div> <!-- carousel-art -->
+
+</div>
+
+
+<!---------------------------------------------------------------------------------------------->
+<!------------------------------------------ Social -------------------------------------------->
+<!---------------------------------------------------------------------------------------------->
+
+<div class="w3-container color-orange" style="padding:128px 16px" id="contact">
+  <h3 class="w3-center">SOCIAL MEDIA</h3>
+  <br>
+  <div align="center">
+  <a class="social w_hover w3-hover-opacity" href="https://www.facebook.com/ConvolutionInteractive/" target="_blank">
+    <i class="fab fa-facebook-square fa-3x icon"></i>@ConvolutionInteractive
+  </a>
+  &emsp;
+  <a class="social w_hover w3-hover-opacity" href="https://twitter.com/ConvInterMTL" target="_blank">
+    <i class="fab fa-twitter-square fa-3x icon"></i>@ConvInterMTL
+  </a>
+  &emsp;
+  <a class="social w_hover w3-hover-opacity" href="https://www.instagram.com/convolutioninteractive/" target="_blank">
+    <i class="fab fa-instagram-square fa-3x icon"></i>@convolutioninteractive
+  </a>
+  &emsp;
+  <a class="social w_hover w3-hover-opacity" href="https://www.youtube.com/channel/UC62LqpxA1Grk8n_OXF6Ml7w" target="_blank">
+    <i class="fab fa-youtube-square fa-3x icon"></i>Convolution Interactive
+  </a>
+  &emsp;
+  <a class="social w_hover w3-hover-opacity" href="https://www.reddit.com/r/LonelyWalkHome/" target="_blank">
+    <i class="fab fa-reddit-square fa-3x icon"></i>r/LonelyWalkHome
+  </a>
+  </div>
+</div>
+
+<!---------------------------------------------------------------------------------------------->
+<!----------------------------------------- Footer --------------------------------------------->
+<!---------------------------------------------------------------------------------------------->
+
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#top" class="w3-button w3-light-grey zoom"><i class="fa fa-angle-up w3-margin-right"></i>Top</a>
+  <br><br>
+  <p>Powered by <a class="o_hover" href="https://www.w3schools.com/w3css/default.asp" title="w3.css" target="_blank" class="w3-hover-text-green">w3</a>
+    and <a class="o_hover" href="https://getbootstrap.com/" title="Bootsrap.css" target="_blank" class="w3-hover-text-green">Bootsrap</a>
+  </p>
+</footer>
+
+
+</body>
+</html>
